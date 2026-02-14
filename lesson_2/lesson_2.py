@@ -1,3 +1,4 @@
+from pathlib import Path
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
@@ -5,8 +6,11 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.impute import SimpleImputer
 
 # read the data
-X_full = pd.read_csv('train.csv', index_col='Id')
-X_test_full = pd.read_csv('test.csv', index_col='Id')
+train_path = Path(__file__).parent.parent / "train.csv"
+test_path = Path(__file__).parent.parent / "test.csv"
+
+X_full = pd.read_csv(train_path, index_col='Id')
+X_test_full = pd.read_csv(test_path, index_col='Id')
 
 # remove rows with missing target, separate target from predictors
 X_full.dropna(axis=0, subset=['SalePrice'], inplace=True)
