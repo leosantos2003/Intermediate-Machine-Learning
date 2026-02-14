@@ -4,7 +4,7 @@
 
 This repository documents the learnings from completing the [Intermediate Machine Learning](https://www.kaggle.com/learn/intermediate-machine-learning) course on [Kaggle](https://www.kaggle.com/).
 
-Hands-on project focused on handling missing values, non-numeric values, data leakage, and more.
+Hands-on project focused on handling missing values, non-numeric values, data leakage and more.
 
 * `lesson_2`: missing values; getting prepared for missing values in real datasets.
 
