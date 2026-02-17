@@ -102,4 +102,4 @@ preds_test = model.predict(final_X_test)
 
 # save test predictions to file
 output = pd.DataFrame({'Id': X_test.index, 'SalePrice': preds_test})
-output.to_csv('submission_lesson_2.csv', index=False)
+output.to_csv('lesson_2/submission_lesson_2.csv', index=False)

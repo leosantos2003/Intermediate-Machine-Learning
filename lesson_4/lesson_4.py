@@ -110,6 +110,6 @@ preds_test = my_pipeline.predict(X_test)
 
 # save test predictions to file
 output = pd.DataFrame({'Id': X_test.index, 'SalePrice': preds_test})
-output.to_csv('submission_lesson_4.csv', index=False)
+output.to_csv('lesson_4/submission_lesson_4.csv', index=False)
 
 print("\n--- (4) Test predictions saved to 'submission_lesson_4.csv' ---\n")
